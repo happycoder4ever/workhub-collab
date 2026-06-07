@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { fetchProjects, createProject, updateProject, deleteProject } from '../services/projectService';
 import type { Project } from '../types/project';
 import ProjectForm from '../components/ProjectForm.vue';

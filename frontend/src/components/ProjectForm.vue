@@ -1,6 +1,6 @@
 <template>
   <section class="form-panel">
-    <h2>{{ project ? 'Edit project' : 'Create project' }}</h2>
+    <h2>{{ title }}</h2>
     <form @submit.prevent="onSubmit">
       <label>
         Name
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, defineEmits, reactive, watchEffect } from 'vue';
+import { computed, reactive, watchEffect } from 'vue';
 import type { Project } from '../types/project';
 
 const props = defineProps<{ project: Project | null }>();
