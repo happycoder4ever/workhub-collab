@@ -22,7 +22,6 @@ pnpm-debug.log*
 .idea/
 
 # VS Code
-.vscode/
 
 # Docker
 **/docker-compose.override.yml
@@ -31,3 +30,4 @@ pnpm-debug.log*
 # OS
 .DS_Store
 Thumbs.db
+config.bat
